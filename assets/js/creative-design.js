@@ -42,7 +42,7 @@ $(document).ready(function()
         {
             //  $("button.navbar-toggler").click();
 
-            $(".navbar-collapse").collapse('hide');
+            $(".navbar-collapse").collapse('hide'); // Changes made for auto close patch
             
         }
     });
