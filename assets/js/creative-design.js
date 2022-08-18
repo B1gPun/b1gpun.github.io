@@ -13,7 +13,8 @@
 */ 
 
 // smooth scroll
-$(document).ready(function(){
+$(document).ready(function()
+{
     $(".navbar .nav-link").on('click', function(event) {
 
         if (this.hash !== "") {
@@ -30,12 +31,22 @@ $(document).ready(function(){
         } 
     });
 
-    $(document).click(function (event) {
+
+
+
+    $(document).click(function (event) 
+    {
         var clickover = $(event.target);
-        var _opened = $(".navbar-collapse").hasClass("navbar-collapse in");
-        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-            $("button.navbar-toggle").click();
+        var _opened = $(".navbar-collapse").hasClass("navbar-collapse");
+        if (_opened === true && !clickover.hasClass("navbar-toggle")) 
+        {
+            //  $("button.navbar-toggler").click();
+
+            $(".navbar-collapse").collapse('hide');
+            
         }
     });
+
+    
 
 }); 
